@@ -59,7 +59,15 @@ kubectl delete pods <pod_name> -n <namespace_name>
 kubectl delete svc <service_name> -n <namespace_name>
 kubectl delete cm <config_map_name> -n <namespace_name>
 ```
+## To see logs of a pod
+```
+kubectl logs -f <pod_name> -n <namespace_name>
+```
 
+## To exec in pod
+```
+kubectl exec -it <pod_name> -n <namespace_name> -- bash
+```
 
 
 
